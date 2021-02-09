@@ -33,6 +33,14 @@ func main() {
 	fmt.Println(">>>", n, t2, t3, t4)
 
 	for scanner.Scan() {
+		line := scanner.Text()
+
+		ingredients := strings.Split(line, " ")
+
+		for i := 1; i < len(ingredients); i++ {
+			fmt.Println(".....", ingredients[i])
+		}
+
 		fmt.Println(scanner.Text())
 	}
 
