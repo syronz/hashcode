@@ -26,8 +26,9 @@ func main() {
 	Pizzas = make(map[int]pkg.Pizza)
 
 	// file, err := os.Open("a_example")
-	// file, err := os.Open("b_little_bit_of_everything.in")
-	file, err := os.Open("./c_many_ingredients.in")
+	file, err := os.Open("b_little_bit_of_everything.in")
+	// file, err := os.Open("./c_many_ingredients.in")
+	// file, err := os.Open("./d_many_pizzas.in")
 	if err != nil {
 		log.Fatal(err)
 	}
